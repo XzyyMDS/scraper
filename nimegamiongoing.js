@@ -9,11 +9,13 @@ async function nimegamiOngoing() {
 
         $('article').each((i, el) => {
             const title = $(el).find('h3').text().trim();
+            const genre = $(el).find('div.live-action-live a').text().trim();
             const link = $(el).find('h3 > a').attr('href');
             const image = $(el).find('div.thumb img').attr('src');
             const episode = $(el).find('div.eps_ongo').text().replace('Eps.', '').trim();
             res.push({
                 title,
+                genre,
                 link,
                 image,
                 episode
