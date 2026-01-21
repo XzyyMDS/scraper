@@ -25,6 +25,6 @@ async function nimegamiSearch(text) {
 
             return result;
         } catch (error) {
-            console.error("Unexpected error:", error ");
+            console.error("Unexpected error:", error);
             }
         };
