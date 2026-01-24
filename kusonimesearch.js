@@ -5,7 +5,7 @@ async function kusonimeSearch(text) {
     try {
         const gtx = await axios.get("https://kusonime.com/?s=${encodeURIComponent(text)}&post_type=post", {
             headers: {
-                'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
+                'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36'
             }
         });
         const $ = await cheerio.load(gtx.data);
@@ -17,12 +17,7 @@ async function kusonimeSearch(text) {
             const image = $(el).find('.thumbz img').attr('src'):
                 const link = $(el).find('.content a').attr('href');
 
-            res.push({
-                title,
-                genre,
-                image,
-                link
-            });
+            res.push({ title, genre, image, link });
         });
 
         return res;
