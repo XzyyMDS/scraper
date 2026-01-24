@@ -23,7 +23,6 @@ async function kusonimeSearch(text) {
                 image,
                 link
             });
-
         });
 
         return res;
