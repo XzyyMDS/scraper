@@ -25,3 +25,5 @@ async function sfileSearch(name, page = 1)
   console.error("Error:", error.message);
     }
 };
+
+module.exports = { sfileSearch };
