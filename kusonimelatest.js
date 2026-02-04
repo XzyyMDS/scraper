@@ -30,3 +30,5 @@ async function kusonimeLatest() {
         console.error("Error:", error.message);
     }
 };
+
+module.exports = { kusonimeLatest };
