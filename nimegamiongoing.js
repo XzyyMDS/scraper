@@ -27,3 +27,5 @@ async function nimegamiOngoing() {
         console.error("Error:", error.message);
     }
 };
+
+module.exports = { nimegamiOngoing };
