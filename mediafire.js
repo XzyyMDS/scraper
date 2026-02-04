@@ -27,3 +27,5 @@ async function mediafiredl(url) {
         throw new Error(`Error: ${error.message}`);
     };
 };
+
+module.exports = { mediafiredl };
