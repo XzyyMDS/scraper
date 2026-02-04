@@ -29,3 +29,5 @@ async function modyoloSearch(text) {
     console.error("Error:" + error.message);
     }
 };
+
+module.exports = { modyoloSearch };
