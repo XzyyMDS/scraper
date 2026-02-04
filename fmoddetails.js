@@ -22,3 +22,5 @@ async function fmodDetails(url) {
     console.error("Error:", error.message);
   }
 };
+
+module.exports = { fmodDetails };
