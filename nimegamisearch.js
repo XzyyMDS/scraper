@@ -28,3 +28,5 @@ async function nimegamiSearch(text) {
             console.error("Unexpected error:", error);
             }
         };
+
+        module.exports = { nimegamiSearch };
