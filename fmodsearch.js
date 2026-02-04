@@ -28,3 +28,5 @@ async function fmodSearch(text) {
     console.error("Error:", error.message);
     }
  };
+
+module.exports = { fmodSearch };
