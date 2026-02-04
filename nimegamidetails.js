@@ -30,3 +30,5 @@ async function nimegamiDetails(url) {
         console.error("Error:", error.message)
     }
 };
+
+module.exports = { nimegamiDetails };
