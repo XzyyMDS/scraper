@@ -25,3 +25,5 @@ async function kusonimeSearch(text) {
         console.error("Error:", error.message);
     }
 };
+
+module.exports = { kusonimeSearch };
