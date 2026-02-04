@@ -29,4 +29,4 @@ async function nimegamiSearch(text) {
             }
         };
 
-        module.exports = { nimegamiSearch };
+module.exports = { nimegamiSearch };
