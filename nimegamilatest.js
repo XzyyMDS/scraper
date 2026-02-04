@@ -39,3 +39,5 @@ async function nimegamiLatest() {
         console.error("Error:", error.message);
     }
 };
+
+module.exports = { nimegamiLatest };
