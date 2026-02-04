@@ -22,3 +22,5 @@ async function fmodLatest() {
       console.error("Unexpected error:", error.message);
     }
 };
+
+module.exports = { fmodLatest };
